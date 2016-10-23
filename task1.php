@@ -1,10 +1,10 @@
 <html>
-<head> <meta charset="UTF-8">
- <link rel="stylesheet" href="task11.css">
-</head>
-<body>
-<?php
-$computers = [
+	<head> <meta charset="UTF-8">
+	<link rel="stylesheet" href="task11.css">
+	</head>
+	<body>
+	<?php
+	$computers = [
 		'Ноутбуки' => [
 			[
 				'vendor' => 'ASUS',
@@ -57,64 +57,51 @@ $computers = [
 			
 		]
 	];
-	  foreach($computers as $key => $type)
-   {
-	    
-	 echo " <br> <div class='sp'> $key: </div> <br> ";
-   foreach ($type as $product ) {
-		 
-		 		  if (isset ($product['hdd'])){
-		 ?> <div class="Add"> Жесткий диск. <?=$product['hdd']?>Гб</div>
-		<?php }
-		
-				
-				
-				 if (isset ($product['vendor'])){
-		 ?> <div class="Add"> Продавец. <?=htmlspecialchars($product['vendor'])?></div>
-		<?php }
-				
-				
-				 if (isset ($product['model'])){
-		 ?> <div class="Add"> Модель. <?=$product['model']?></div>
-		<?php }
-				
-				 if (isset ($product['memory'])){
-		 ?> <div class="Add"> Память. <?=$product['memory']?>Гб</div>
-		<?php }
-				
-				
-				if (isset ($product['screen'])){
-		 ?> <div class="Add"> Экран. <?=$product['screen']?> Дюйм</div>
-		<?php }
-				
-				
-				if (isset ($product['OS'])){
-		 ?> <div class="Add"> Операционная система.<?=htmlspecialchars($product['OS'])?></div>
-		<?php }
-				
-				if (isset ($product['price'])){ 
-		 ?> <div class="Add"> Цена. <?=number_format($product['price'],2,',',' ');?> рублей <br></div> 
-				 
-		<?php  
-		}
-				
-				
-				if (isset ($product['cpu'])){
-		 ?> <div class="Add"> Процессор. <?=htmlspecialchars($product['cpu'] )?></div>
-		<?php }
-				
-				
-				if (isset ($product['video'])){
-		 ?> <div class="Add"> Видеокарта. <?=htmlspecialchars($product['video']) ?><br><br></div>
-		<?php }
-				
-				
-				if (isset($product['photo'])){
-				echo '<img src="'.$product['photo'].'"><br><br>';
-					}
-				
-				
+	foreach($computers as $key => $type){  
+		echo " <p> <div class='sp'> $key: </div> <p> ";
+		foreach ($type as $product ) {
+		 	if (isset ($product['hdd'])){
+			?> <div class="Add"> Жесткий диск. <?=htmlspecialchars($product['hdd'])?>Гб</div>
+			<?php 
 			}
-			} 
+			if (isset ($product['vendor'])){
+			?> <div class="Add"> Продавец. <?=htmlspecialchars($product['vendor'])?></div>
+			<?php 
+			}
+			if (isset ($product['model'])){
+			?> <div class="Add"> Модель. <?=htmlspecialchars($product['model'])?></div>
+			<?php 
+			}
+			if (isset ($product['memory'])){
+			?> <div class="Add"> Память. <?=htmlspecialchars($product['memory'])?>Гб</div>
+			<?php 
+			}			
+			if (isset ($product['screen'])){
+			?> <div class="Add"> Экран. <?=htmlspecialchars($product['screen'])?> Дюйм</div>
+			<?php 
+			}
+			if (isset ($product['OS'])){
+			?> <div class="Add"> Операционная система.<?=htmlspecialchars($product['OS'])?></div>
+			<?php
+			}
+			if (isset ($product['price'])){ 
+			?> <div class="Add"> Цена. <?=htmlspecialchars(number_format($product['price'],2,',',' '));?> рублей </div> 
+			<?php
+			}
+			if (isset ($product['cpu'])){
+			?> <div class="Add"> Процессор. <?=htmlspecialchars($product['cpu'] )?></div>
+			<?php
+			}
+			if (isset ($product['video'])){
+			?> <div class="Add"> Видеокарта. <?=htmlspecialchars($product['video']) ?><p></div>
+			<?php 
+			}
+			if (isset($product['photo'])){
+			echo '<p><img src="'.$product['photo'].'"><p>';
+			}	
+		}
+	} 
 			?>
+</body>
+</html>
 		  
