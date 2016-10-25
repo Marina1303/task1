@@ -1,0 +1,25 @@
+.sp {
+	color:white;
+	background-color:blue;
+	padding: 10px;
+	font-style: normal;
+	text-align: left;
+	font-variant: small-caps;
+	font-weight: bold; 
+	font-family: 'Verdana';
+	font-size: 150%;
+	text-indent: 2.0em
+}
+.Add {
+	color: darkblue;
+	font-weight: 600;
+	font-family: 'Comic Sans MS';
+	 font-size: 120%;
+	 text-indent: 3.2em
+}
+body
+{
+
+background-image:url(http://hdwallpaperbackgrounds.net/wp-content/uploads/2016/07/white-background-5.jpg);
+
+}
