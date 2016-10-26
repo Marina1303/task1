@@ -61,43 +61,43 @@
 		echo " <p> <div class='sp'> $key: </div> <p> ";
 		foreach ($type as $product ) {
 		 	if (isset ($product['hdd'])){
-			?> <div class="Add"> Жесткий диск: <?=htmlspecialchars($product['hdd'])?>Гб</div>
-			<?php 
+				?> <div class="Add"> Жесткий диск: <?=htmlspecialchars($product['hdd'])?>Гб</div>
+				<?php 
 			}
 			if (isset ($product['vendor'])){
-			?> <div class="Add"> Продавец: <?=htmlspecialchars($product['vendor'])?></div>
-			<?php 
+				?> <div class="Add"> Продавец: <?=htmlspecialchars($product['vendor'])?></div>
+				<?php 
 			}
 			if (isset ($product['model'])){
-			?> <div class="Add"> Модель: <?=htmlspecialchars($product['model'])?></div>
-			<?php 
+				?> <div class="Add"> Модель: <?=htmlspecialchars($product['model'])?></div>
+				<?php 
 			}
 			if (isset ($product['memory'])){
-			?> <div class="Add"> Память: <?=htmlspecialchars($product['memory'])?>Гб</div>
-			<?php 
+				?> <div class="Add"> Память: <?=htmlspecialchars($product['memory'])?>Гб</div>
+				<?php 
 			}			
 			if (isset ($product['screen'])){
-			?> <div class="Add"> Экран: <?=htmlspecialchars($product['screen'])?> Дюйм</div>
-			<?php 
+				?> <div class="Add"> Экран: <?=htmlspecialchars($product['screen'])?> Дюйм</div>
+				<?php 
 			}
 			if (isset ($product['OS'])){
-			?> <div class="Add"> Операционная система: <?=htmlspecialchars($product['OS'])?></div>
-			<?php
+				?> <div class="Add"> Операционная система: <?=htmlspecialchars($product['OS'])?></div>
+				<?php
 			}
 			if (isset ($product['price'])){ 
-			?> <div class="Add"> Цена: <?=htmlspecialchars(number_format($product['price'],2,',',' '));?> рублей </div> 
-			<?php
+				?> <div class="Add"> Цена: <?=htmlspecialchars(number_format($product['price'],2,',',' '));?> рублей </div> 
+				<?php
 			}
 			if (isset ($product['cpu'])){
-			?> <div class="Add"> Процессор: <?=htmlspecialchars($product['cpu'] )?></div>
-			<?php
+				?> <div class="Add"> Процессор: <?=htmlspecialchars($product['cpu'] )?></div>
+				<?php
 			}
 			if (isset ($product['video'])){
-			?> <div class="Add"> Видеокарта: <?=htmlspecialchars($product['video']) ?><p></div>
-			<?php 
+				?> <div class="Add"> Видеокарта: <?=htmlspecialchars($product['video']) ?><p></div>
+				<?php 
 			}
 			if (isset($product['photo'])){
-			echo '<p><img src="'.$product['photo']. '"><p>';
+				echo '<p><img src="'.$product['photo']. '"><p>';
 			}	
 		}
 	} 
